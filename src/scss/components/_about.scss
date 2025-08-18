@@ -1,0 +1,101 @@
+.about {
+  &__top {
+    display: flex;
+    margin-bottom: 75px;
+    gap: 34px;
+  }
+
+  &__title {
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 45px;
+    text-align: left;
+    color: rgb(0, 0, 0);
+  }
+
+  &__descr {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: left;
+    color: rgb(0, 0, 0);
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin-bottom: 75px;
+    gap: 100px;
+
+    @include tablet {
+      grid-template-columns: repeat(8, 1fr);
+    }
+
+    @include small-tablet {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    grid-column: 4 span;
+    gap: 20px;
+  }
+
+  &__banner {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 10px;
+    padding: 20px 40px;
+    background-color: #3C3C3C;
+    gap: 60px;
+
+    @include tablet {
+      flex-direction: column;
+      padding: 40px 20px;
+
+    }
+  }
+
+  &__img {
+    max-width: 260px;
+  }
+
+  &__subtitle {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: left;
+    color: #FFF;
+
+    span {
+      color: #F6A700;
+    }
+  }
+
+  &__subdescr {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+
+    svg {
+      width: 48px;
+      transition: scale 0.3s ease-in-out;
+
+      @include hover {
+        scale: (115%);
+      }
+    }
+  }
+}

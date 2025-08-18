@@ -1,0 +1,133 @@
+.footer {
+  background-color: #0F0F0F;
+  background-image: url(../img/bgrdReward.webp);
+  background-repeat: no-repeat;
+  background-position: top;
+
+  &__content {
+    padding: 5rem 0;
+  }
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+
+  &__logo {
+    margin-left: -25px;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    gap: 1rem;
+
+    @include small-tablet {
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+  }
+
+  &__sublist {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+
+    @include small-tablet {
+      align-items: center;
+    }
+  }
+
+  &__title {
+    margin-bottom: 1rem;
+    font-weight: 800;
+    font-size: 1.25rem;
+    line-height: 20px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+  }
+
+  &__link {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.43rem;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    transition: all 0.3s ease-in-out;
+
+    @include mobile {
+      font-size: 0.8rem;
+    }
+
+    &:focus {
+      outline: dashed 2px #fff;
+    }
+
+    @include hover {
+      color: #4f8ff0;
+    }
+
+    &:active {
+      color: #19077e;
+    }
+
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  &__ref {
+    transition: all 0.3s ease-in-out;
+
+    &:focus {
+      outline: dashed 2px #fff;
+    }
+
+    @include hover {
+      scale: 115%;
+    }
+
+    &:active {
+      scale: 95%;
+    }
+
+
+    svg {
+      width: 36px;
+      height: 36px;
+    }
+  }
+
+  &__copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  &__copy {
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 1.43rem;
+    text-align: left;
+    color: rgb(255, 255, 255);
+
+    a {
+      font-weight: 400;
+      font-size: 0.8rem;
+      line-height: 1.43rem;
+      text-align: left;
+      text-decoration: underline;
+      color: rgb(255, 255, 255);
+    }
+  }
+}

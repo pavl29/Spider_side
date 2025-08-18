@@ -1,0 +1,174 @@
+.service {
+  &__wrapper {
+    display: flex;
+
+
+    @include small-tablet {
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+
+  &__left {
+    position: relative;
+    display: flex;
+    flex: 0 0 40%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 2rem;
+
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      display: block;
+      width: 4px;
+      height: 100%;
+      background-color: rgb(246, 167, 0);
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+    text-align: left;
+    text-transform: capitalize;
+    color: rgb(0, 0, 0);
+
+    span {
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 35px;
+      text-align: left;
+      color: rgb(153, 153, 153);
+    }
+
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  &__descr {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: left;
+    color: rgb(0, 0, 0);
+
+  @include small-tablet {
+    font-size: 16px;
+  }
+  }
+
+  &__bottom {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+
+    @include big-desktop {
+      flex-direction: column-reverse;
+      gap: 2rem;
+    }
+  }
+
+  &__pic {
+    position: absolute;
+    left: -80px;
+    top: 0;
+    z-index: 1;
+
+    @include big-desktop {
+      position: static;
+    }
+  }
+
+  &__form-wrap {
+    display: flex;
+    flex: 0 0 60%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-radius: 10px 80px 10px 10px;
+    padding: 50px;
+    background: rgba(77, 77, 77, 0.096);
+    gap: 1rem;
+
+
+    @include big-desktop {
+      flex: 0 0 100%;
+    }
+
+    @include mobile {
+      padding: 25px;
+    }
+  }
+
+  &__form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: all 0.3s ease-in-out;
+    gap: 25px;
+  }
+
+  &__form :first-child .just-validate-error-label {
+    position: absolute;
+    left: 0;
+    top: -25px;
+    width: 250px;
+  }
+
+  &__label-checkbox~.just-validate-error-label {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 250px;
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+
+  &__input {
+    border: 1px solid rgb(222, 222, 222);
+    border-radius: 5px;
+    padding: 14px 19px;
+    background: rgb(255, 255, 255);
+
+    @include small-tablet {
+    max-width: 150px;
+    }
+  }
+
+
+
+
+
+  &__subtitle {
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: left;
+    color: rgb(0, 0, 0);
+
+
+    @include small-tablet {
+      font-size: 18px;
+    }
+  }
+
+
+}

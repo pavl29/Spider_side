@@ -1,0 +1,25 @@
+.actually {
+  margin-top: auto;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #fff;
+  user-select: none;
+
+  &__open {
+    display: none;
+    border-radius: 5px;
+    padding: 1rem;
+    color: rgb(5, 61, 0);
+    background-color: rgb(9, 255, 0);
+  }
+
+  &__closed {
+    display: none;
+    border-radius: 5px;
+    padding: 1rem;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 0, 0);
+  }
+
+  @include tablet {
+    align-self: center;
+  }
+}

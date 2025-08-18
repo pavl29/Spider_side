@@ -1,0 +1,50 @@
+.location {
+  color: rgb(255, 255, 255);
+  transition: all 0.3s ease-in-out;
+
+
+  &--black {
+    color: #000;
+  }
+
+  @include hover {
+    color: #4f8ff0;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    color: currentcolor;
+    gap: 9px;
+  }
+
+
+  &__img {
+    width: 2rem;
+    height: 2rem;
+    color: currentcolor;
+
+    g {
+      stroke: currentcolor;
+    }
+
+  }
+
+  &__address {
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.43rem;
+    white-space: nowrap;
+    text-align: left;
+
+    @include small-tablet {
+      display: none;
+    }
+
+    &--no-hidden {
+      @include small-tablet {
+        display: block;
+      }
+    }
+  }
+}

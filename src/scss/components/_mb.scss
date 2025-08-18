@@ -1,0 +1,11 @@
+.mb {
+  margin-bottom: 100px;
+
+  @include tablet {
+    margin-bottom: 75px;
+  }
+
+  @include mobile {
+    margin-bottom: 30px;
+  }
+}

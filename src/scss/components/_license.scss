@@ -1,0 +1,18 @@
+.license {
+  background-color: #292929;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.6rem 0;
+  }
+
+  &__author {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 25.71px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+  }
+}

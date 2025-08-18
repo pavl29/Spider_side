@@ -1,0 +1,21 @@
+.modal-product {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  &__img {
+    max-width: 60px;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 20px;
+  }
+
+  &__delete {
+    margin-left: auto;
+    max-width: 32px;
+  }
+}
