@@ -1,0 +1,73 @@
+    <header class="header">
+        <div class="header__container">
+            <h1 class="header__title">Интернет-магазин</h1>
+            <button class="header__cart-button" id="cart-button">
+                <span class="header__cart-icon">🛒</span>
+                <span class="header__cart-count" id="cart-count">0</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="main__container">
+            <h2 class="main__title">Наши товары</h2>
+            <div class="products">
+                <div class="product-card" data-id="1" data-name="Смартфон Galaxy X" data-price="29990" data-image="https://via.placeholder.com/300x200?text=Galaxy+X">
+                    <img src="https://via.placeholder.com/300x200?text=Galaxy+X" alt="Смартфон Galaxy X" class="product-card__image">
+                    <div class="product-card__content">
+                        <h3 class="product-card__title">Смартфон Galaxy X</h3>
+                        <p class="product-card__description">Мощный смартфон с большим экраном и отличной камерой</p>
+                        <p class="product-card__price">29 990 ₽</p>
+                        <button class="product-card__button">Добавить в корзину</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="2" data-name="Ноутбук UltraBook" data-price="59990" data-image="https://via.placeholder.com/300x200?text=UltraBook">
+                    <img src="https://via.placeholder.com/300x200?text=UltraBook" alt="Ноутбук UltraBook" class="product-card__image">
+                    <div class="product-card__content">
+                        <h3 class="product-card__title">Ноутбук UltraBook</h3>
+                        <p class="product-card__description">Легкий и производительный ноутбук для работы и развлечений</p>
+                        <p class="product-card__price">59 990 ₽</p>
+                        <button class="product-card__button">Добавить в корзину</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="3" data-name="Наушники SoundMax" data-price="7990" data-image="https://via.placeholder.com/300x200?text=SoundMax">
+                    <img src="https://via.placeholder.com/300x200?text=SoundMax" alt="Наушники SoundMax" class="product-card__image">
+                    <div class="product-card__content">
+                        <h3 class="product-card__title">Наушники SoundMax</h3>
+                        <p class="product-card__description">Беспроводные наушники с шумоподавлением и чистым звуком</p>
+                        <p class="product-card__price">7 990 ₽</p>
+                        <button class="product-card__button">Добавить в корзину</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-modal__overlay"></div>
+        <div class="cart-modal__content">
+            <button class="cart-modal__close" id="close-cart">×</button>
+            <h2 class="cart-modal__title">Корзина</h2>
+            <div class="cart-modal__items" id="cart-items">
+                <div class="cart-modal__empty">Ваша корзина пуста</div>
+            </div>
+            <div class="cart-modal__total">
+                <span>Итого:</span>
+                <span class="cart-modal__total-price" id="cart-total">0 ₽</span>
+            </div>
+            <button class="cart-modal__order-button" id="order-button" disabled>Оформить заказ</button>
+        </div>
+    </div>
+
+    <div class="order-popup" id="order-popup">
+        <div class="order-popup__overlay"></div>
+        <div class="order-popup__content">
+            <button class="order-popup__close" id="close-popup">×</button>
+            <h2 class="order-popup__title">Заказ успешно оформлен!</h2>
+            <p class="order-popup__order-number" id="order-number"></p>
+            <p class="order-popup__message">Спасибо за ваш заказ! Наш менеджер свяжется с вами в ближайшее время для подтверждения деталей.</p>
+            <button class="order-popup__button" id="close-popup-button">Закрыть</button>
+        </div>
+    </div>
