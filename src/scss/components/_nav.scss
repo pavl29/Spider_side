@@ -8,8 +8,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
     margin-right: 3rem;
+    gap: 3rem;
 
     @include tablet {
       position: fixed;
@@ -20,6 +20,7 @@
       align-items: center;
       justify-content: flex-start;
       overflow: auto;
+    margin-right: 0;
       padding: 100px 26px;
       width: 50vw;
       height: 100vh;
@@ -29,7 +30,6 @@
       transform: translateX(100%);
       transition: all 0.3s ease-in-out;
       gap: 24px;
-    margin-right: 0;
 
     }
 
@@ -43,6 +43,7 @@
 
 
   &__link {
+    z-index: 10000;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -53,7 +54,6 @@
     color: rgb(255, 255, 255);
     transition: all 0.3s ease-in-out;
     gap: 9px;
-    z-index: 10000;
 
 
     @include mobile {
@@ -96,10 +96,14 @@
 
   @include tablet {
     z-index: 10000;
-    margin-left: auto;
     margin-right: 2rem;
+    margin-left: auto;
   }
 
+@include mobile {
+margin-right: 0;
+margin-left: 0;
+}
 
 }
 

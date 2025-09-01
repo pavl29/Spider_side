@@ -5,6 +5,12 @@
     gap: 34px;
   }
 
+  &__decore {
+    @include mobile {
+      display: none;
+    }
+  }
+
   &__title {
     font-weight: 800;
     font-size: 36px;

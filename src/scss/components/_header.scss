@@ -6,6 +6,54 @@
   width: 100%;
   background-color: transparent;
 
+  &__cart-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    background-image: url("../img/cart.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+
+    &-black {
+      @include tablet {
+        background-image: url("../img/cartBlack.svg");
+      }
+
+      @include small-tablet {
+        background-image: url("../img/cart.svg");
+
+      }
+
+    }
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+  }
+
+  &__cart-count {
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    font-weight: 700;
+    font-size: 12px;
+    color: #fff;
+    background-color: rgb(246, 167, 0);
+  }
+
   &__top {
     background-color: #0F0F0F;
   }
@@ -30,6 +78,7 @@
 
     a {
       display: flex;
+      align-items: center;
       font-weight: 600;
       font-size: 1rem;
       line-height: 1.43rem;
@@ -39,25 +88,23 @@
       transition: all 0.3s ease-in-out;
       gap: 9px;
 
-      @include mobile {
-        font-size: 0.8rem;
+      svg {
+        width: 35px;
+        height: 35px;
+
+        @include small-tablet {
+          width: 28px;
+          height: 28px;
+        }
       }
 
 
-      &::before {
-        content: '';
-        display: block;
-        width: 20px;
-        height: 20px;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
+      span {
+        @include mobile {
+          display: none;
+        }
       }
 
-      @include hover {
-        color: #4f8ff0;
-
-      }
     }
 
     @include mobile {
@@ -68,32 +115,49 @@
   }
 
 
-  &__phone {
-    &::before {
-      width: 30px;
-        height: 30px;
-      background-image: url("../img/tel.svg");
+
+  &__icon {
+    &-phone {
+      animation: shake 0.01s steps(1, end) infinite;
+      animation-delay: 3s;
+
+
+
+      @keyframes shake {
+        0%,
+        90% {
+          transform: rotate(15deg);
+        }
+
+        91%,
+        100% {
+          transform: rotate(0deg);
+        }
+
+      }
     }
 
-    span {
-      @include mobile {
-        display: none;
+
+    &-wsp {
+      animation: jump 1s infinite;
+      animation-delay: 3s;
+
+      @keyframes jump {
+        0% {
+          transform: translateY(0);
+        }
+
+        50% {
+          transform: translateY(-4px);
+        }
+
+        100% {
+          transform: translateX(0);
+        }
+
       }
     }
   }
-
-  &__wsp {
-    &::before {
-      background-image: url("../img/whatsapp.svg");
-    }
-
-    span {
-      @include mobile {
-        display: none;
-      }
-    }
-  }
-
 
 
   &__wrapper {
@@ -107,11 +171,33 @@
     font-size: 0;
     gap: 9px;
 
+    @include mobile {
+      a {
+        align-self: center;
+        order: 2;
+      }
+
+      button {
+        justify-self: flex-start;
+        order: 1;
+      }
+
+      nav {
+        order: 3;
+
+      }
+    }
+
+
   }
 
   &__logo {
     margin-left: -25px;
     max-height: 68px;
+
+    @include mobile {
+      margin: 0;
+    }
 
   }
 

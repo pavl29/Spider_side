@@ -1,8 +1,8 @@
 .footer {
-  background-color: #0F0F0F;
-  background-image: url(../img/bgrdReward.webp);
+  background-image: url("../img/bgrdReward.webp");
+  background-position: top center;
   background-repeat: no-repeat;
-  background-position: top;
+  background-color: #0F0F0F;
 
   &__content {
     padding: 5rem 0;
@@ -46,7 +46,7 @@
   &__title {
     margin-bottom: 1rem;
     font-weight: 800;
-    font-size: 1.25rem;
+    font-size: 1.75rem;
     line-height: 20px;
     text-align: left;
     color: rgb(255, 255, 255);
@@ -54,14 +54,14 @@
 
   &__link {
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.5rem;
     line-height: 1.43rem;
     text-align: left;
     color: rgb(255, 255, 255);
     transition: all 0.3s ease-in-out;
 
     @include mobile {
-      font-size: 0.8rem;
+      font-size: 1.35rem;
     }
 
     &:focus {
@@ -110,24 +110,10 @@
   &__copyright {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     gap: 1rem;
   }
 
-  &__copy {
-    font-weight: 400;
-    font-size: 0.8rem;
-    line-height: 1.43rem;
-    text-align: left;
-    color: rgb(255, 255, 255);
 
-    a {
-      font-weight: 400;
-      font-size: 0.8rem;
-      line-height: 1.43rem;
-      text-align: left;
-      text-decoration: underline;
-      color: rgb(255, 255, 255);
-    }
-  }
 }

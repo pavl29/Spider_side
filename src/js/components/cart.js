@@ -330,12 +330,15 @@ document.addEventListener('DOMContentLoaded', () => {
     let name = self.querySelector('[name="Имя"]').value;
     let tel = self.querySelector('[name="Телефон"]').value;
     let email = self.querySelector('[name="Email"]').value;
+    let fprice = self.querySelector('#cart-total').value;
 
+    console.log(fprice)
 
     formData.append('Имя', name);
     formData.append('Телефон', `<a href="tel:${tel}">${tel}</a>`);
     formData.append('Email', email);
     formData.append('Товары', prodClean);
+    formData.append('Итого', fprice);
     formData.append('Заказ №', count);
 
     let xhr = new XMLHttpRequest();

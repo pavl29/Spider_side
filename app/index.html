@@ -12,8 +12,6 @@
     content="Установочная студия Спайдер, сайт профессиональной студии автозвука в Краснодаре, Мы специализируемся на установке, настройке и обслуживании аудиосистем любой сложности для легковых автомобилей, внедорожников и микроавтобусов. Наша команда состоит из сертифицированных специалистов с многолетним опытом работы в индустрии автозвука. Мы используем только современное профессиональное оборудование и комплектующие от ведущих мировых производителей. Работаем с автомобилями любых марок и моделей. Гарантируем качество всех работ и используем только сертифицированные комплектующие. Предоставляем гарантию на все виды услуг. Запишитесь на консультацию прямо сейчас! Поможем создать идеальную акустическую систему для вашего автомобиля." />
   <meta name="theme-color" content="#111111">
   <title>Spider Audio Site — Главная</title>
-  <link rel="stylesheet" href="css/vendor.css">
-  <link rel="stylesheet" href="css/main.css">
   <link href="fonts/GilroyBlack.woff2" as="font" type="font/woff2" crossorigin>
   <link href="fonts/GilroyBold.woff2" as="font" type="font/woff2" crossorigin>
   <link href="fonts/GilroyExtrabold.woff2" as="font" type="font/woff2" crossorigin>
@@ -21,10 +19,12 @@
   <link href="fonts/GilroyMedium.woff2" as="font" type="font/woff2" crossorigin>
   <link href="fonts/GilroyRegular.woff2" as="font" type="font/woff2" crossorigin>
   <link href="fonts/GilroySemibold.woff2" as="font" type="font/woff2" crossorigin>
-  <script defer src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+  <!-- <script defer src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
   <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script defer
-    src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/jquery.inputmask.bundle.min.js"></script>
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/jquery.inputmask.bundle.min.js"></script> -->
+  <link blocking="render" rel="stylesheet" href="css/vendor.css">
+  <link blocking="render" rel="stylesheet" href="css/main.css">
   <script defer src="js/main.js"></script>
 </head>
 
@@ -35,12 +35,41 @@
     <div class="container">
       <div class="header__reference">
         <div class="header__contacts">
-          <a class="header__phone" aria-label="Кнопка позвонить" href="tel:+79184438082"><span>+7 918 443-80-82</span></a>
-          <a class="header__wsp" aria-label="Кнопка написать в WhattsApp" href="http://wa.me/79094440062" target="_blank"><span>Написать в
-              WhatsApp</span></a>
+          <a class="header__phone" aria-label="Кнопка позвонить" href="tel:+79184438082">
+            <svg class="header__icon header__icon-phone" height="200px" width="200px" version="1.1" id="_x32_"
+              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512"
+              xml:space="preserve" fill="" stroke="" stroke-width="43.519999999999996">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <style type="text/css">
+                  .st0 {
+                    fill: #F6A700;
+                  }
+                </style>
+                <g>
+                  <path class="st0"
+                    d="M94.811,21.696c-35.18,22.816-42.091,94.135-28.809,152.262c10.344,45.266,32.336,105.987,69.42,163.165 c34.886,53.79,83.557,102.022,120.669,129.928c47.657,35.832,115.594,58.608,150.774,35.792 c17.789-11.537,44.218-43.058,45.424-48.714c0,0-15.498-23.896-18.899-29.14l-51.972-80.135 c-3.862-5.955-28.082-0.512-40.386,6.457c-16.597,9.404-31.882,34.636-31.882,34.636c-11.38,6.575-20.912,0.024-40.828-9.142 c-24.477-11.262-51.997-46.254-73.9-77.947c-20.005-32.923-40.732-72.322-41.032-99.264c-0.247-21.922-2.341-33.296,8.304-41.006 c0,0,29.272-3.666,44.627-14.984c11.381-8.392,26.228-28.286,22.366-34.242l-51.972-80.134c-3.401-5.244-18.899-29.14-18.899-29.14 C152.159-1.117,112.6,10.159,94.811,21.696z">
+                  </path>
+                </g>
+              </g>
+            </svg><span>+7 918 443-80-82</span>
+          </a>
+          <a class="header__wsp" aria-label="Кнопка написать в WhattsApp" href="http://wa.me/79094440062"
+            target="_blank">
+            <svg class="header__icon header__icon-wsp" viewBox="0 0 20 20" fill="none"
+              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <defs />
+              <path id="Vector"
+                d="M10.01 0C4.5 0 0.02 4.47 0.02 9.98C0.01 11.74 0.48 13.46 1.35 14.97L0 20L5.23 18.76C6.69 19.55 8.33 19.97 10 19.98L10.01 19.98C15.51 19.98 19.99 15.5 20 9.99C20 7.32 18.96 4.81 17.07 2.92C15.19 1.03 12.68 0 10.01 0ZM10.01 2C12.14 2 14.15 2.83 15.66 4.34C17.17 5.85 18 7.85 18 9.99C17.99 14.39 14.41 17.98 10 17.98C8.67 17.97 7.35 17.64 6.19 17L5.51 16.64L4.77 16.81L2.8 17.28L3.28 15.49L3.5 14.69L3.08 13.97C2.39 12.76 2.01 11.38 2.02 9.98C2.02 5.58 5.6 2 10.01 2ZM6.47 5.37C6.3 5.37 6.03 5.43 5.81 5.68C5.58 5.93 4.93 6.53 4.93 7.76C4.93 8.99 5.83 10.18 5.95 10.34C6.07 10.51 7.68 13.11 10.21 14.11C12.32 14.94 12.75 14.78 13.21 14.74C13.67 14.69 14.69 14.13 14.89 13.55C15.1 12.97 15.1 12.46 15.04 12.36C14.98 12.26 14.81 12.2 14.56 12.07C14.31 11.95 13.08 11.34 12.86 11.26C12.63 11.18 12.46 11.14 12.3 11.39C12.13 11.64 11.65 12.2 11.51 12.36C11.36 12.53 11.21 12.55 10.96 12.43C10.71 12.3 9.91 12.04 8.96 11.19C8.21 10.53 7.71 9.71 7.57 9.46C7.42 9.21 7.55 9.07 7.68 8.95C7.79 8.84 7.93 8.66 8.05 8.51C8.17 8.37 8.22 8.26 8.3 8.1C8.39 7.93 8.34 7.78 8.28 7.66C8.22 7.53 7.73 6.3 7.51 5.81C7.32 5.39 7.13 5.38 6.95 5.38C6.8 5.37 6.64 5.37 6.47 5.37Z"
+                fill="#2ECC71" fill-opacity="1.000000" fill-rule="nonzero" />
+            </svg><span>Написать в
+              WhatsApp</span>
+          </a>
         </div>
         <div class="location">
-          <a class="location__link" aria-label="Кнопка местоположение оргинизации" href="https://yandex.ru/maps/-/CHgPbF5k" target="_blank">
+          <a class="location__link" aria-label="Кнопка местоположение оргинизации"
+            href="https://yandex.ru/maps/-/CHgPbF5k" target="_blank">
             <svg class="location__img" xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 48 48">
               <g fill="none" stroke-linejoin="round" stroke-width="4">
                 <path stroke-linecap="round"
@@ -198,89 +227,67 @@
               </svg>
               Установка
             </a></li>
-          <li class="nav__item"><a href="#" class="nav__link nav__link--catalog">
+          <li class="nav__item"><a href="catalog.html" class="nav__link nav__link--catalog">
               <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 1024 1024">
                 <path
                   d="M704 192h160v736H160V192h160v64h384v-64zM288 512h448v-64H288v64zm0 256h448v-64H288v64zm96-576V96h256v96H384z" />
               </svg> Каталог
             </a></li>
         </ul>
-        <div class="header__cart cart " tabindex="0">
-          <div aria-label="Кнопка корзины" class="cart__text nav__link ">
-            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 92 92" id="Cart">
-              <path
-                d="M91.8 27.3 81.1 61c-.8 2.4-2.9 4-5.4 4H34.4c-2.4 0-4.7-1.5-5.5-3.7L13.1 19H4c-2.2 0-4-1.8-4-4s1.8-4 4-4h11.9c1.7 0 3.2 1.1 3.8 2.7L36 57h38l8.5-27H35.4c-2.2 0-4-1.8-4-4s1.8-4 4-4H88c1.3 0 2.5.7 3.2 1.7.8 1 1 2.4.6 3.6zm-55.4 43c-1.7 0-3.4.7-4.6 1.9-1.2 1.2-1.9 2.9-1.9 4.6 0 1.7.7 3.4 1.9 4.6 1.2 1.2 2.9 1.9 4.6 1.9s3.4-.7 4.6-1.9c1.2-1.2 1.9-2.9 1.9-4.6 0-1.7-.7-3.4-1.9-4.6-1.2-1.2-2.9-1.9-4.6-1.9zm35.9 0c-1.7 0-3.4.7-4.6 1.9s-1.9 2.9-1.9 4.6c0 1.7.7 3.4 1.9 4.6 1.2 1.2 2.9 1.9 4.6 1.9 1.7 0 3.4-.7 4.6-1.9 1.2-1.2 1.9-2.9 1.9-4.6 0-1.7-.7-3.4-1.9-4.6s-2.9-1.9-4.6-1.9z"
-                fill="#ffffff" class="color000000 svgShape"></path>
-            </svg>
-            <span class="cart__descr">
-              Корзина
-            </span>
-            <span class="cart__quantity">0</span>
-          </div>
-          <div class="cart-content">
-            <ul class="cart-content__list">
-            </ul>
-            <div class="cart-content__bottom">
-              <div class="cart-content__fullprice">
-                <span>Итого:</span>
-                <span class="fullprice product__price">
-                </span>
-              </div>
-              <button class="cart-content__btn btn btn-black btn-reset" aria-label="Кнопка оформить заказ" data-graph-path="modal" data-graph-animation="fadeInUp">
-                Оформить заказ
-              </button>
-            </div>
-          </div>
-        </div>
+        <button class="header__cart-button btn-reset" id="cart-button">
+          <span class="header__cart-count" id="cart-count">0</span>
+        </button>
       </nav>
     </div>
+    <div class="search-widget">
+      <form class="search-widget__form" id="search-form">
+        <div class="search-widget__input-container">
+          <input type="text" class="search-widget__input" id="search-input" placeholder="Поиск товаров...">
+          <button type="submit" class="search-widget__button">
+            <svg class="search-widget__icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M19.5606 17.4394L15.7525 13.6313C16.9394 12.2152 17.6562 10.3828 17.6562 8.39844C17.6562 3.84531 13.8109 0 9.25781 0C4.70469 0 0.859375 3.84531 0.859375 8.39844C0.859375 12.9516 4.70469 16.7969 9.25781 16.7969C11.2422 16.7969 13.0746 16.0801 14.4907 14.8932L18.2988 18.7013C18.5195 18.922 18.8094 19.0324 19.0992 19.0324C19.3891 19.0324 19.6789 18.922 19.8996 18.7013C20.341 18.2599 20.341 17.5609 19.5606 17.4394ZM9.25781 14.7969C5.74609 14.7969 2.85938 11.9102 2.85938 8.39844C2.85938 4.88672 5.74609 2 9.25781 2C12.7695 2 15.6562 4.88672 15.6562 8.39844C15.6562 11.9102 12.7695 14.7969 9.25781 14.7969Z"
+                fill="currentColor" />
+            </svg>
+          </button>
+        </div>
+      </form>
+    </div>
   </div>
-  <div id="modal" class="graph-modal modal">
-    <div class="graph-modal__container modal__container" role="dialog" aria-modal="true" data-graph-target="modal">
-      <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
-      <div class="graph-modal__content modal__content">
-        <div class="modal__top">
-          <h2 class="modal__title">
-            Оформление заказа
-          </h2>
-          <span class="modal__num">
-            Заказ №
-            <span id="numberOfOrder"></span>
-          </span>
+  <div class="cart-modal" id="cart-modal">
+    <div class="cart-modal__overlay"></div>
+    <div class="cart-modal__content">
+      <button class="cart-modal__close" id="close-cart">×</button>
+      <div class="cart-modal__header">
+        <h2 class="cart-modal__title">Корзина</h2>
+        <div class="cart-modal__order-number" id="cart-order-number"></div>
+      </div>
+      <div class="cart-modal__items" id="cart-items">
+        <div class="cart-modal__empty">Ваша корзина пуста</div>
+      </div>
+      <button class="cart-modal__clear-button" id="clear-cart">Очистить корзину</button>
+      <form id="modalForm" action="#" class="modal__form order" method="POST" enctype="multipart/form-data">
+        <label class="order__label">
+          <span class="order__text">Ваше имя</span>
+          <input id="modalName" tabindex="2" type="text" name="Имя" class="input-reset order__input " required
+            placeholder="Имя">
+        </label>
+        <label class="order__label order__label-tel">
+          <span class="order__text">Номер телефона</span>
+          <input autocomplete="off" type="tel" tabindex="3" name="Телефон" class="input-reset modal__tel order__input">
+        </label>
+        <label class="order__label">
+          <span class="order__text">Электронная почта</span>
+          <input id="orderMail" tabindex="4" type="email" name="Email" class="input-reset order__input " required
+            placeholder="example@mail.ru">
+        </label>
+        <div class="cart-modal__total">
+          <span>Итого:</span>
+          <span class="cart-modal__total-price" id="cart-total">0 ₽</span>
         </div>
-        <div class="modal__info">
-          <div class="modal__info-item modal__quantity">Товаров в заказе: <span></span></div>
-          <div class="modal__info-item modal__summ">Общая сумма заказа: <span></span></div>
-          <div class="modal__info-item modal__products">
-            <button class="btn-reset modal__info-item modal__open">
-              Состав заказа
-            </button>
-            <ul class="modal__list">
-            </ul>
-          </div>
-          <p class="modal__text">
-            Внимание!!!
-            Состав заказа, количество позиций возможно изменить во время подтверждения заказа по телефону!
-          </p>
-        </div>
-        <form id="modalForm" action="#" class="modal__form order" method="POST"
-          enctype="multipart/form-data">
-          <label class="order__label">
-            <span class="order__text">Ваше имя</span>
-            <input id="modalName" tabindex="2" type="text" name="Имя" class="input-reset order__input "
-                required placeholder="Имя">
-          </label>
-          <label class="order__label order__label-tel">
-            <span class="order__text">Номер телефона</span>
-            <input type="tel" tabindex="3" name="Телефон"
-              class="input-reset modal__tel order__input">
-          </label>
-          <label class="order__label">
-            <span class="order__text">Электронная почта</span>
-            <input id="orderMail" tabindex="4" type="email" name="Email" class="input-reset order__input "
-                required placeholder="example@mail.ru">
-          </label>
-          <button aria-label="Кнопка оформить заказ" id="submit-btn" class="btn-reset order__btn  btn"><span>Оформить заказ</span> </button>
+        <button aria-label="Кнопка оформить заказ" class="btn-reset order__btn  btn  submit-btn" id="order-button"
+          disabled> <span class="orderBtnText"> Оформить заказ</span>
           <div class="spinner center">
             <div class="spinner-blade"></div>
             <div class="spinner-blade"></div>
@@ -295,21 +302,21 @@
             <div class="spinner-blade"></div>
             <div class="spinner-blade"></div>
           </div>
-        </form>
-      </div>
-              <button class="modal-popup__btn" onclick="popup.showModal()">
         </button>
-        <dialog class="popup" id="popup">
-          <form class="popup__modal" action="#" method="dialog">
-            <p class="modal__text popup__text">Ваш заказ отправлен, ожидайте звонка от менеджера!</p>
-            <button aria-label="Кнопка закрыть модальное окно" id="popupModalClose" class="popup__btn btn  btn-reset">
-              Закрыть
-            </button>
-          </form>
-        </dialog>
+      </form>
     </div>
   </div>
-
+  <div class="order-popup" id="order-popup">
+    <div class="order-popup__overlay"></div>
+    <div class="order-popup__content">
+      <button class="order-popup__close" id="close-popup">×</button>
+      <h2 class="order-popup__title">Заказ успешно оформлен!</h2>
+      <p class="order-popup__order-number" id="order-number"></p>
+      <p class="order-popup__message">Спасибо за ваш заказ! Наш менеджер свяжется с вами в ближайшее время для
+        подтверждения деталей.</p>
+      <button class="order-popup__button btn btn-reset" id="close-popup-button">Закрыть</button>
+    </div>
+  </div>
 </header>
 
     <main class="main">
@@ -320,11 +327,11 @@
             SpiderAudio — студия автозвука
           </h1>
           <p class="hero__descr" data-aos="fade-left">
-            Мы-лучшие в вопросе подбора аудиокомпонентов для вашего авто.  Наши мастера — эксперты в своем деле, и соберут
-            любой комплект под ваш запрос
+         Экспертный подбор автоакустики: ваш звук — наша страсть
           </p>
           <!-- <button class="btn hero__btn" data-aos="fade-up">Выбрать автозвук</button> -->
         </div>
+        <div class="arrow animated"></div>
       </div>
     </section>
 
@@ -478,12 +485,11 @@
         <h3 class="service__subtitle">
           Запишитесь на установку!
         </h3>
-        <form id="serviceForm" action="#" class="form service__form"   method="POST"
-          enctype="multipart/form-data">
+        <form id="serviceForm" action="#" class="form service__form" method="POST" enctype="multipart/form-data">
           <label class="form__label service__label">
-            <input id="serviceTel" type="tel" name="Телефон" class="input-reset service__input service__tel service-tel form__input"
-              placeholder="Номер телефона">
-          <button id="serviceFormBtn" class="btn-reset btn form__btn">Записаться</button>
+            <input id="serviceTel" autocomplete="off" type="tel" name="Телефон"
+              class="input-reset service__input service__tel service-tel form__input" placeholder="Номер телефона">
+            <button id="serviceFormBtn" class="btn-reset btn form__btn">Записаться</button>
           </label>
           <label class="custom-checkbox service__label-checkbox">
             <input id="serviceCheckbox" required type="checkbox" class="custom-checkbox__field">
@@ -498,397 +504,163 @@
   </div>
 </section>
 
-        <section class="products mb">
-      <div data-aos="fade-in"></div>
-      <div class="container">
-        <h2 class="products__title" data-aos="fade-right">
-          Товары недели
-        </h2>
-        <ul class="products__list">
-          <li class="products__item" data-aos="slide-up">
-            <article class="product">
-              <div class="product__img">
-                <img src="img/product.webp" alt="Изображение товара">
-              </div>
-              <div class="product__bottom">
-                <h3 class="product__title">
-                  Акустика Pride Solo Mini 6,5
-                </h3>
-
-                <span class="product__price">
-                  3 750 ₽
-                </span>
-                <button aria-label="Кнопка добавить в корзину" class="product__btn btn">
-                  <svg width="22.000000" height="21.949707" viewBox="0 0 22 21.9497" fill="none"
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <defs />
-                    <path id="Vector"
-                      d="M0.93 0L4.95 0C5.37 0 5.7 0.28 5.84 0.65L9.57 12.47L17.56 12.47L19.8 5.88L11.39 5.88C10.88 5.88 10.45 5.46 10.45 4.94C10.45 4.43 10.88 4.01 11.39 4.01L21.06 4.01C21.89 4.05 22.1 4.81 21.95 5.18L19.1 13.68C18.96 14.05 18.59 14.28 18.21 14.28L8.92 14.28C8.5 14.28 8.13 14.05 8.03 13.68L4.3 1.86L0.93 1.86C0.42 1.86 0 1.44 0 0.92C0 0.41 0.42 0 0.93 0Z"
-                      fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero" />
-                    <path id="Vector"
-                      d="M17.37 15.97C19.01 15.97 20.36 17.32 20.36 18.96C20.36 20.59 19.01 21.94 17.37 21.94C15.74 21.94 14.38 20.59 14.38 18.96C14.38 17.32 15.74 15.97 17.37 15.97ZM16.25 19C16.25 19.66 16.77 20.17 17.37 20.17C17.98 20.17 18.49 19.66 18.49 19C18.49 18.35 17.98 17.83 17.37 17.83C16.72 17.84 16.2 18.35 16.25 19Z"
-                      fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero" />
-                    <path id="Vector"
-                      d="M10.09 15.97C11.72 15.97 13.08 17.32 13.08 18.96C13.08 20.59 11.72 21.94 10.09 21.94C8.41 21.94 7.1 20.59 7.1 18.96C7.1 17.32 8.45 15.97 10.09 15.97ZM8.96 19C8.96 19.66 9.48 20.17 10.08 20.17C10.69 20.17 11.2 19.66 11.2 19C11.2 18.35 10.69 17.83 10.08 17.83C9.43 17.84 8.92 18.35 8.96 19Z"
-                      fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero" />
-                  </svg>
-                </button aria-label="Кнопка добавить в корзину">
-              </div>
-            </article>
-          </li>
-          <li class="products__item" data-aos="slide-up">
-            <article class="product">
-              <div class="product__img">
-                <img src="img/product2.webp" alt="Изображение товара">
-              </div>
-              <div class="product__bottom">
-                <h3 class="product__title">
-                  Магнитола Aura AMH-77DSP
-                </h3>
-
-                <span class="product__price">
-                  5 750 ₽
-                </span>
-                <button aria-label="Кнопка добавить в корзину" class="product__btn btn">
-                  <svg width="22.000000" height="21.949707" viewBox="0 0 22 21.9497" fill="none"
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <defs />
-                    <path id="Vector"
-                      d="M0.93 0L4.95 0C5.37 0 5.7 0.28 5.84 0.65L9.57 12.47L17.56 12.47L19.8 5.88L11.39 5.88C10.88 5.88 10.45 5.46 10.45 4.94C10.45 4.43 10.88 4.01 11.39 4.01L21.06 4.01C21.89 4.05 22.1 4.81 21.95 5.18L19.1 13.68C18.96 14.05 18.59 14.28 18.21 14.28L8.92 14.28C8.5 14.28 8.13 14.05 8.03 13.68L4.3 1.86L0.93 1.86C0.42 1.86 0 1.44 0 0.92C0 0.41 0.42 0 0.93 0Z"
-                      fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero" />
-                    <path id="Vector"
-                      d="M17.37 15.97C19.01 15.97 20.36 17.32 20.36 18.96C20.36 20.59 19.01 21.94 17.37 21.94C15.74 21.94 14.38 20.59 14.38 18.96C14.38 17.32 15.74 15.97 17.37 15.97ZM16.25 19C16.25 19.66 16.77 20.17 17.37 20.17C17.98 20.17 18.49 19.66 18.49 19C18.49 18.35 17.98 17.83 17.37 17.83C16.72 17.84 16.2 18.35 16.25 19Z"
-                      fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero" />
-                    <path id="Vector"
-                      d="M10.09 15.97C11.72 15.97 13.08 17.32 13.08 18.96C13.08 20.59 11.72 21.94 10.09 21.94C8.41 21.94 7.1 20.59 7.1 18.96C7.1 17.32 8.45 15.97 10.09 15.97ZM8.96 19C8.96 19.66 9.48 20.17 10.08 20.17C10.69 20.17 11.2 19.66 11.2 19C11.2 18.35 10.69 17.83 10.08 17.83C9.43 17.84 8.92 18.35 8.96 19Z"
-                      fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero" />
-                  </svg>
-                </button aria-label="Кнопка добавить в корзину">
-
-              </div>
-            </article>
-          </li>
-          <li class="products__item" data-aos="slide-up">
-            <article class="product">
-              <div class="product__img">
-                <img src="img/product3.webp" alt="Изображение товара">
-              </div>
-              <div class="product__bottom">
-                <h3 class="product__title">
-                  Акустика Pride Solo v.3 (в комплекте OVERBOOST)
-                </h3>
-                <span class="product__price">
-                  8 000 ₽
-                </span>
-                <button aria-label="Кнопка добавить в корзину" class="product__btn btn">
-                  <svg width="22.000000" height="21.949707" viewBox="0 0 22 21.9497" fill="none"
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <defs />
-                    <path id="Vector"
-                      d="M0.93 0L4.95 0C5.37 0 5.7 0.28 5.84 0.65L9.57 12.47L17.56 12.47L19.8 5.88L11.39 5.88C10.88 5.88 10.45 5.46 10.45 4.94C10.45 4.43 10.88 4.01 11.39 4.01L21.06 4.01C21.89 4.05 22.1 4.81 21.95 5.18L19.1 13.68C18.96 14.05 18.59 14.28 18.21 14.28L8.92 14.28C8.5 14.28 8.13 14.05 8.03 13.68L4.3 1.86L0.93 1.86C0.42 1.86 0 1.44 0 0.92C0 0.41 0.42 0 0.93 0Z"
-                      fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero" />
-                    <path id="Vector"
-                      d="M17.37 15.97C19.01 15.97 20.36 17.32 20.36 18.96C20.36 20.59 19.01 21.94 17.37 21.94C15.74 21.94 14.38 20.59 14.38 18.96C14.38 17.32 15.74 15.97 17.37 15.97ZM16.25 19C16.25 19.66 16.77 20.17 17.37 20.17C17.98 20.17 18.49 19.66 18.49 19C18.49 18.35 17.98 17.83 17.37 17.83C16.72 17.84 16.2 18.35 16.25 19Z"
-                      fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero" />
-                    <path id="Vector"
-                      d="M10.09 15.97C11.72 15.97 13.08 17.32 13.08 18.96C13.08 20.59 11.72 21.94 10.09 21.94C8.41 21.94 7.1 20.59 7.1 18.96C7.1 17.32 8.45 15.97 10.09 15.97ZM8.96 19C8.96 19.66 9.48 20.17 10.08 20.17C10.69 20.17 11.2 19.66 11.2 19C11.2 18.35 10.69 17.83 10.08 17.83C9.43 17.84 8.92 18.35 8.96 19Z"
-                      fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero" />
-                  </svg>
-                </button aria-label="Кнопка добавить в корзину">
-              </div>
-            </article>
-          </li>
-          <li class="products__item" data-aos="slide-up">
-            <article class="product">
-              <div class="product__img">
-                <img src="img/product4.webp" alt="Изображение товара">
-              </div>
-              <div class="product__bottom">
-                <h3 class="product__title">
-                  Акустика Pride Solo Mini 6,5
-                </h3>
-                <span class="product__price">
-                  3 750 ₽
-                </span>
-                <button aria-label="Кнопка добавить в корзину" class="product__btn btn">
-                  <svg width="22.000000" height="21.949707" viewBox="0 0 22 21.9497" fill="none"
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <defs />
-                    <path id="Vector"
-                      d="M0.93 0L4.95 0C5.37 0 5.7 0.28 5.84 0.65L9.57 12.47L17.56 12.47L19.8 5.88L11.39 5.88C10.88 5.88 10.45 5.46 10.45 4.94C10.45 4.43 10.88 4.01 11.39 4.01L21.06 4.01C21.89 4.05 22.1 4.81 21.95 5.18L19.1 13.68C18.96 14.05 18.59 14.28 18.21 14.28L8.92 14.28C8.5 14.28 8.13 14.05 8.03 13.68L4.3 1.86L0.93 1.86C0.42 1.86 0 1.44 0 0.92C0 0.41 0.42 0 0.93 0Z"
-                      fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero" />
-                    <path id="Vector"
-                      d="M17.37 15.97C19.01 15.97 20.36 17.32 20.36 18.96C20.36 20.59 19.01 21.94 17.37 21.94C15.74 21.94 14.38 20.59 14.38 18.96C14.38 17.32 15.74 15.97 17.37 15.97ZM16.25 19C16.25 19.66 16.77 20.17 17.37 20.17C17.98 20.17 18.49 19.66 18.49 19C18.49 18.35 17.98 17.83 17.37 17.83C16.72 17.84 16.2 18.35 16.25 19Z"
-                      fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero" />
-                    <path id="Vector"
-                      d="M10.09 15.97C11.72 15.97 13.08 17.32 13.08 18.96C13.08 20.59 11.72 21.94 10.09 21.94C8.41 21.94 7.1 20.59 7.1 18.96C7.1 17.32 8.45 15.97 10.09 15.97ZM8.96 19C8.96 19.66 9.48 20.17 10.08 20.17C10.69 20.17 11.2 19.66 11.2 19C11.2 18.35 10.69 17.83 10.08 17.83C9.43 17.84 8.92 18.35 8.96 19Z"
-                      fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero" />
-                  </svg>
-                </button aria-label="Кнопка добавить в корзину">
-              </div>
-            </article>
-          </li>
-          <li class="products__item" data-aos="slide-up">
-            <article class="product">
-              <div class="product__img">
-                <img src="img/product.webp" alt="Изображение товара">
-              </div>
-              <div class="product__bottom">
-                <h3 class="product__title">
-                  Акустика Pride Solo v.3 (в комплекте OVERBOOST)
-                </h3>
-                <span class="product__price">
-                  8 000 ₽
-                </span>
-                <button aria-label="Кнопка добавить в корзину" class="product__btn btn">
-                  <svg width="22.000000" height="21.949707" viewBox="0 0 22 21.9497" fill="none"
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <defs />
-                    <path id="Vector"
-                      d="M0.93 0L4.95 0C5.37 0 5.7 0.28 5.84 0.65L9.57 12.47L17.56 12.47L19.8 5.88L11.39 5.88C10.88 5.88 10.45 5.46 10.45 4.94C10.45 4.43 10.88 4.01 11.39 4.01L21.06 4.01C21.89 4.05 22.1 4.81 21.95 5.18L19.1 13.68C18.96 14.05 18.59 14.28 18.21 14.28L8.92 14.28C8.5 14.28 8.13 14.05 8.03 13.68L4.3 1.86L0.93 1.86C0.42 1.86 0 1.44 0 0.92C0 0.41 0.42 0 0.93 0Z"
-                      fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero" />
-                    <path id="Vector"
-                      d="M17.37 15.97C19.01 15.97 20.36 17.32 20.36 18.96C20.36 20.59 19.01 21.94 17.37 21.94C15.74 21.94 14.38 20.59 14.38 18.96C14.38 17.32 15.74 15.97 17.37 15.97ZM16.25 19C16.25 19.66 16.77 20.17 17.37 20.17C17.98 20.17 18.49 19.66 18.49 19C18.49 18.35 17.98 17.83 17.37 17.83C16.72 17.84 16.2 18.35 16.25 19Z"
-                      fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero" />
-                    <path id="Vector"
-                      d="M10.09 15.97C11.72 15.97 13.08 17.32 13.08 18.96C13.08 20.59 11.72 21.94 10.09 21.94C8.41 21.94 7.1 20.59 7.1 18.96C7.1 17.32 8.45 15.97 10.09 15.97ZM8.96 19C8.96 19.66 9.48 20.17 10.08 20.17C10.69 20.17 11.2 19.66 11.2 19C11.2 18.35 10.69 17.83 10.08 17.83C9.43 17.84 8.92 18.35 8.96 19Z"
-                      fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero" />
-                  </svg>
-                </button aria-label="Кнопка добавить в корзину">
-
-              </div>
-            </article>
-          </li>
-          <li class="products__item" data-aos="slide-up">
-            <article class="product">
-              <div class="product__img">
-                <img src="img/product2.webp" alt="Изображение товара">
-              </div>
-              <div class="product__bottom">
-                <h3 class="product__title">
-                  Акустика Pride Solo Mini 6,5
-                </h3>
-
-                <span class="product__price">
-                  3 750 ₽
-                </span>
-                <button aria-label="Кнопка добавить в корзину" class="product__btn btn">
-                  <svg width="22.000000" height="21.949707" viewBox="0 0 22 21.9497" fill="none"
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <defs />
-                    <path id="Vector"
-                      d="M0.93 0L4.95 0C5.37 0 5.7 0.28 5.84 0.65L9.57 12.47L17.56 12.47L19.8 5.88L11.39 5.88C10.88 5.88 10.45 5.46 10.45 4.94C10.45 4.43 10.88 4.01 11.39 4.01L21.06 4.01C21.89 4.05 22.1 4.81 21.95 5.18L19.1 13.68C18.96 14.05 18.59 14.28 18.21 14.28L8.92 14.28C8.5 14.28 8.13 14.05 8.03 13.68L4.3 1.86L0.93 1.86C0.42 1.86 0 1.44 0 0.92C0 0.41 0.42 0 0.93 0Z"
-                      fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero" />
-                    <path id="Vector"
-                      d="M17.37 15.97C19.01 15.97 20.36 17.32 20.36 18.96C20.36 20.59 19.01 21.94 17.37 21.94C15.74 21.94 14.38 20.59 14.38 18.96C14.38 17.32 15.74 15.97 17.37 15.97ZM16.25 19C16.25 19.66 16.77 20.17 17.37 20.17C17.98 20.17 18.49 19.66 18.49 19C18.49 18.35 17.98 17.83 17.37 17.83C16.72 17.84 16.2 18.35 16.25 19Z"
-                      fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero" />
-                    <path id="Vector"
-                      d="M10.09 15.97C11.72 15.97 13.08 17.32 13.08 18.96C13.08 20.59 11.72 21.94 10.09 21.94C8.41 21.94 7.1 20.59 7.1 18.96C7.1 17.32 8.45 15.97 10.09 15.97ZM8.96 19C8.96 19.66 9.48 20.17 10.08 20.17C10.69 20.17 11.2 19.66 11.2 19C11.2 18.35 10.69 17.83 10.08 17.83C9.43 17.84 8.92 18.35 8.96 19Z"
-                      fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero" />
-                  </svg>
-                </button aria-label="Кнопка добавить в корзину">
-
-              </div>
-            </article>
-          </li>
-          <li class="products__item" data-aos="slide-up">
-            <article class="product">
-              <div class="product__img">
-                <img src="img/product3.webp" alt="Изображение товара">
-              </div>
-              <div class="product__bottom">
-                <h3 class="product__title">
-                  Магнитола Aura AMH-77DSP
-                </h3>
-                <span class="product__price">
-                  5 750 ₽
-                </span>
-                <button aria-label="Кнопка добавить в корзину" class="product__btn btn">
-                  <svg width="22.000000" height="21.949707" viewBox="0 0 22 21.9497" fill="none"
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <defs />
-                    <path id="Vector"
-                      d="M0.93 0L4.95 0C5.37 0 5.7 0.28 5.84 0.65L9.57 12.47L17.56 12.47L19.8 5.88L11.39 5.88C10.88 5.88 10.45 5.46 10.45 4.94C10.45 4.43 10.88 4.01 11.39 4.01L21.06 4.01C21.89 4.05 22.1 4.81 21.95 5.18L19.1 13.68C18.96 14.05 18.59 14.28 18.21 14.28L8.92 14.28C8.5 14.28 8.13 14.05 8.03 13.68L4.3 1.86L0.93 1.86C0.42 1.86 0 1.44 0 0.92C0 0.41 0.42 0 0.93 0Z"
-                      fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero" />
-                    <path id="Vector"
-                      d="M17.37 15.97C19.01 15.97 20.36 17.32 20.36 18.96C20.36 20.59 19.01 21.94 17.37 21.94C15.74 21.94 14.38 20.59 14.38 18.96C14.38 17.32 15.74 15.97 17.37 15.97ZM16.25 19C16.25 19.66 16.77 20.17 17.37 20.17C17.98 20.17 18.49 19.66 18.49 19C18.49 18.35 17.98 17.83 17.37 17.83C16.72 17.84 16.2 18.35 16.25 19Z"
-                      fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero" />
-                    <path id="Vector"
-                      d="M10.09 15.97C11.72 15.97 13.08 17.32 13.08 18.96C13.08 20.59 11.72 21.94 10.09 21.94C8.41 21.94 7.1 20.59 7.1 18.96C7.1 17.32 8.45 15.97 10.09 15.97ZM8.96 19C8.96 19.66 9.48 20.17 10.08 20.17C10.69 20.17 11.2 19.66 11.2 19C11.2 18.35 10.69 17.83 10.08 17.83C9.43 17.84 8.92 18.35 8.96 19Z"
-                      fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero" />
-                  </svg>
-                </button aria-label="Кнопка добавить в корзину">
-
-              </div>
-            </article>
-          </li>
-          <li class="products__item" data-aos="slide-up">
-            <article class="product">
-              <div class="product__img">
-                <img src="img/product4.webp" alt="Изображение товара">
-              </div>
-              <div class="product__bottom">
-                <h3 class="product__title">
-                  Акустика Pride Solo Mini 6,5
-                </h3>
-
-                <span class="product__price">
-                  3 750 ₽
-                </span>
-                <button aria-label="Кнопка добавить в корзину" class="product__btn btn">
-                  <svg width="22.000000" height="21.949707" viewBox="0 0 22 21.9497" fill="none"
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <defs />
-                    <path id="Vector"
-                      d="M0.93 0L4.95 0C5.37 0 5.7 0.28 5.84 0.65L9.57 12.47L17.56 12.47L19.8 5.88L11.39 5.88C10.88 5.88 10.45 5.46 10.45 4.94C10.45 4.43 10.88 4.01 11.39 4.01L21.06 4.01C21.89 4.05 22.1 4.81 21.95 5.18L19.1 13.68C18.96 14.05 18.59 14.28 18.21 14.28L8.92 14.28C8.5 14.28 8.13 14.05 8.03 13.68L4.3 1.86L0.93 1.86C0.42 1.86 0 1.44 0 0.92C0 0.41 0.42 0 0.93 0Z"
-                      fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero" />
-                    <path id="Vector"
-                      d="M17.37 15.97C19.01 15.97 20.36 17.32 20.36 18.96C20.36 20.59 19.01 21.94 17.37 21.94C15.74 21.94 14.38 20.59 14.38 18.96C14.38 17.32 15.74 15.97 17.37 15.97ZM16.25 19C16.25 19.66 16.77 20.17 17.37 20.17C17.98 20.17 18.49 19.66 18.49 19C18.49 18.35 17.98 17.83 17.37 17.83C16.72 17.84 16.2 18.35 16.25 19Z"
-                      fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero" />
-                    <path id="Vector"
-                      d="M10.09 15.97C11.72 15.97 13.08 17.32 13.08 18.96C13.08 20.59 11.72 21.94 10.09 21.94C8.41 21.94 7.1 20.59 7.1 18.96C7.1 17.32 8.45 15.97 10.09 15.97ZM8.96 19C8.96 19.66 9.48 20.17 10.08 20.17C10.69 20.17 11.2 19.66 11.2 19C11.2 18.35 10.69 17.83 10.08 17.83C9.43 17.84 8.92 18.35 8.96 19Z"
-                      fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero" />
-                  </svg>
-                </button aria-label="Кнопка добавить в корзину">
-
-              </div>
-            </article>
-          </li>
-          <li class="products__item" data-aos="slide-up">
-            <article class="product">
-              <div class="product__img">
-                <img src="img/product.webp" alt="Изображение товара">
-              </div>
-              <div class="product__bottom">
-                <h3 class="product__title">
-                  Акустика Pride Solo v.3 (в комплекте OVERBOOST)
-
-                </h3>
-
-                <span class="product__price">
-                  8 000 ₽
-                </span>
-                <button aria-label="Кнопка добавить в корзину" class="product__btn btn">
-                  <svg width="22.000000" height="21.949707" viewBox="0 0 22 21.9497" fill="none"
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <defs />
-                    <path id="Vector"
-                      d="M0.93 0L4.95 0C5.37 0 5.7 0.28 5.84 0.65L9.57 12.47L17.56 12.47L19.8 5.88L11.39 5.88C10.88 5.88 10.45 5.46 10.45 4.94C10.45 4.43 10.88 4.01 11.39 4.01L21.06 4.01C21.89 4.05 22.1 4.81 21.95 5.18L19.1 13.68C18.96 14.05 18.59 14.28 18.21 14.28L8.92 14.28C8.5 14.28 8.13 14.05 8.03 13.68L4.3 1.86L0.93 1.86C0.42 1.86 0 1.44 0 0.92C0 0.41 0.42 0 0.93 0Z"
-                      fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero" />
-                    <path id="Vector"
-                      d="M17.37 15.97C19.01 15.97 20.36 17.32 20.36 18.96C20.36 20.59 19.01 21.94 17.37 21.94C15.74 21.94 14.38 20.59 14.38 18.96C14.38 17.32 15.74 15.97 17.37 15.97ZM16.25 19C16.25 19.66 16.77 20.17 17.37 20.17C17.98 20.17 18.49 19.66 18.49 19C18.49 18.35 17.98 17.83 17.37 17.83C16.72 17.84 16.2 18.35 16.25 19Z"
-                      fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero" />
-                    <path id="Vector"
-                      d="M10.09 15.97C11.72 15.97 13.08 17.32 13.08 18.96C13.08 20.59 11.72 21.94 10.09 21.94C8.41 21.94 7.1 20.59 7.1 18.96C7.1 17.32 8.45 15.97 10.09 15.97ZM8.96 19C8.96 19.66 9.48 20.17 10.08 20.17C10.69 20.17 11.2 19.66 11.2 19C11.2 18.35 10.69 17.83 10.08 17.83C9.43 17.84 8.92 18.35 8.96 19Z"
-                      fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero" />
-                  </svg>
-                </button aria-label="Кнопка добавить в корзину">
-
-              </div>
-            </article>
-          </li>
-          <li class="products__item" data-aos="slide-up">
-            <article class="product">
-              <div class="product__img">
-                <img src="img/product2.webp" alt="Изображение товара">
-              </div>
-              <div class="product__bottom">
-                <h3 class="product__title">
-                  Акустика Pride Solo Mini 6,5
-                </h3>
-
-                <span class="product__price">
-                  3 750 ₽
-                </span>
-                <button aria-label="Кнопка добавить в корзину" class="product__btn btn">
-                  <svg width="22.000000" height="21.949707" viewBox="0 0 22 21.9497" fill="none"
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <defs />
-                    <path id="Vector"
-                      d="M0.93 0L4.95 0C5.37 0 5.7 0.28 5.84 0.65L9.57 12.47L17.56 12.47L19.8 5.88L11.39 5.88C10.88 5.88 10.45 5.46 10.45 4.94C10.45 4.43 10.88 4.01 11.39 4.01L21.06 4.01C21.89 4.05 22.1 4.81 21.95 5.18L19.1 13.68C18.96 14.05 18.59 14.28 18.21 14.28L8.92 14.28C8.5 14.28 8.13 14.05 8.03 13.68L4.3 1.86L0.93 1.86C0.42 1.86 0 1.44 0 0.92C0 0.41 0.42 0 0.93 0Z"
-                      fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero" />
-                    <path id="Vector"
-                      d="M17.37 15.97C19.01 15.97 20.36 17.32 20.36 18.96C20.36 20.59 19.01 21.94 17.37 21.94C15.74 21.94 14.38 20.59 14.38 18.96C14.38 17.32 15.74 15.97 17.37 15.97ZM16.25 19C16.25 19.66 16.77 20.17 17.37 20.17C17.98 20.17 18.49 19.66 18.49 19C18.49 18.35 17.98 17.83 17.37 17.83C16.72 17.84 16.2 18.35 16.25 19Z"
-                      fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero" />
-                    <path id="Vector"
-                      d="M10.09 15.97C11.72 15.97 13.08 17.32 13.08 18.96C13.08 20.59 11.72 21.94 10.09 21.94C8.41 21.94 7.1 20.59 7.1 18.96C7.1 17.32 8.45 15.97 10.09 15.97ZM8.96 19C8.96 19.66 9.48 20.17 10.08 20.17C10.69 20.17 11.2 19.66 11.2 19C11.2 18.35 10.69 17.83 10.08 17.83C9.43 17.84 8.92 18.35 8.96 19Z"
-                      fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero" />
-                  </svg>
-                </button aria-label="Кнопка добавить в корзину">
-
-              </div>
-            </article>
-          </li>
-          <li class="products__item" data-aos="slide-up">
-            <article class="product">
-              <div class="product__img">
-                <img src="img/product3.webp" alt="Изображение товара">
-              </div>
-              <div class="product__bottom">
-                <h3 class="product__title">
-                  Магнитола Aura AMH-77DSP
-                </h3>
-                <span class="product__price">
-                  5 750 ₽
-                </span>
-                <button aria-label="Кнопка добавить в корзину" class="product__btn btn">
-                  <svg width="22.000000" height="21.949707" viewBox="0 0 22 21.9497" fill="none"
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <defs />
-                    <path id="Vector"
-                      d="M0.93 0L4.95 0C5.37 0 5.7 0.28 5.84 0.65L9.57 12.47L17.56 12.47L19.8 5.88L11.39 5.88C10.88 5.88 10.45 5.46 10.45 4.94C10.45 4.43 10.88 4.01 11.39 4.01L21.06 4.01C21.89 4.05 22.1 4.81 21.95 5.18L19.1 13.68C18.96 14.05 18.59 14.28 18.21 14.28L8.92 14.28C8.5 14.28 8.13 14.05 8.03 13.68L4.3 1.86L0.93 1.86C0.42 1.86 0 1.44 0 0.92C0 0.41 0.42 0 0.93 0Z"
-                      fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero" />
-                    <path id="Vector"
-                      d="M17.37 15.97C19.01 15.97 20.36 17.32 20.36 18.96C20.36 20.59 19.01 21.94 17.37 21.94C15.74 21.94 14.38 20.59 14.38 18.96C14.38 17.32 15.74 15.97 17.37 15.97ZM16.25 19C16.25 19.66 16.77 20.17 17.37 20.17C17.98 20.17 18.49 19.66 18.49 19C18.49 18.35 17.98 17.83 17.37 17.83C16.72 17.84 16.2 18.35 16.25 19Z"
-                      fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero" />
-                    <path id="Vector"
-                      d="M10.09 15.97C11.72 15.97 13.08 17.32 13.08 18.96C13.08 20.59 11.72 21.94 10.09 21.94C8.41 21.94 7.1 20.59 7.1 18.96C7.1 17.32 8.45 15.97 10.09 15.97ZM8.96 19C8.96 19.66 9.48 20.17 10.08 20.17C10.69 20.17 11.2 19.66 11.2 19C11.2 18.35 10.69 17.83 10.08 17.83C9.43 17.84 8.92 18.35 8.96 19Z"
-                      fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero" />
-                  </svg>
-                </button aria-label="Кнопка добавить в корзину">
-              </div>
-            </article>
-          </li>
-          <li class="products__item" data-aos="slide-up">
-            <article class="product">
-              <div class="product__img">
-                <img src="img/product3.webp" alt="Изображение товара">
-              </div>
-              <div class="product__bottom">
-                <h3 class="product__title">
-                  Акустика Pride Solo Mini 6,5
-                </h3>
-                <span class="product__price">
-                  3 750 ₽
-                </span>
-                <button aria-label="Кнопка добавить в корзину" class="product__btn btn">
-                  <svg width="22.000000" height="21.949707" viewBox="0 0 22 21.9497" fill="none"
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <defs />
-                    <path id="Vector"
-                      d="M0.93 0L4.95 0C5.37 0 5.7 0.28 5.84 0.65L9.57 12.47L17.56 12.47L19.8 5.88L11.39 5.88C10.88 5.88 10.45 5.46 10.45 4.94C10.45 4.43 10.88 4.01 11.39 4.01L21.06 4.01C21.89 4.05 22.1 4.81 21.95 5.18L19.1 13.68C18.96 14.05 18.59 14.28 18.21 14.28L8.92 14.28C8.5 14.28 8.13 14.05 8.03 13.68L4.3 1.86L0.93 1.86C0.42 1.86 0 1.44 0 0.92C0 0.41 0.42 0 0.93 0Z"
-                      fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero" />
-                    <path id="Vector"
-                      d="M17.37 15.97C19.01 15.97 20.36 17.32 20.36 18.96C20.36 20.59 19.01 21.94 17.37 21.94C15.74 21.94 14.38 20.59 14.38 18.96C14.38 17.32 15.74 15.97 17.37 15.97ZM16.25 19C16.25 19.66 16.77 20.17 17.37 20.17C17.98 20.17 18.49 19.66 18.49 19C18.49 18.35 17.98 17.83 17.37 17.83C16.72 17.84 16.2 18.35 16.25 19Z"
-                      fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero" />
-                    <path id="Vector"
-                      d="M10.09 15.97C11.72 15.97 13.08 17.32 13.08 18.96C13.08 20.59 11.72 21.94 10.09 21.94C8.41 21.94 7.1 20.59 7.1 18.96C7.1 17.32 8.45 15.97 10.09 15.97ZM8.96 19C8.96 19.66 9.48 20.17 10.08 20.17C10.69 20.17 11.2 19.66 11.2 19C11.2 18.35 10.69 17.83 10.08 17.83C9.43 17.84 8.92 18.35 8.96 19Z"
-                      fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero" />
-                  </svg>
-                </button aria-label="Кнопка добавить в корзину">
-              </div>
-            </article>
-          </li>
-        </ul>
-        <div class="products__bottom">
-          <a href="##" class="products__link btn btn-reset" data-aos="fade-left">Все товары</a>
+    <section class="products-aria mb">
+  <div data-aos="fade-in"></div>
+  <div class="container">
+    <h2 class="products__title title" data-aos="fade-right">
+      Товары недели
+    </h2>
+    <ul id="products" class="products">
+      <li class="product-card" data-aos="fade-up"  data-name="Акустика Pride Solo Mini 6,5" data-price="7990"
+        data-image="https://magnitolkin.ru/wa-data/public/shop/products/77/46/224677/images/412192/412192.970.jpg">
+        <img src="https://magnitolkin.ru/wa-data/public/shop/products/77/46/224677/images/412192/412192.970.jpg"
+          alt="Смартфон Galaxy X" class="product-card__image">
+        <div class="product-card__content">
+          <h3 class="product-card__title"> Акустика Pride Solo Mini 6,5</h3>
+          <p class="product-card__description">Мощный смартфон с большим экраном и отличной камерой</p>
+          <p class="product-card__price">7 990 ₽</p>
+          <button aria-label="Кнопка добавить в корзину" class="product-card__button btn btn-reset">Добавить в корзину</button>
         </div>
-      </div>
-    </section>
+      </li>
+
+      <li class="product-card" data-aos="fade-up"  data-name="Сабвуфер Pride S.3 10"  data-price="4340"
+        data-image="https://magnitolkin.ru/wa-data/public/shop/products/77/46/224677/images/412192/412192.970.jpg">
+        <img src="https://magnitolkin.ru/wa-data/public/shop/products/77/46/224677/images/412192/412192.970.jpg"
+          alt="Сабвуфер Pride S.3 10" class="product-card__image">
+        <div class="product-card__content">
+          <h3 class="product-card__title"> Сабвуфер Pride S.3 10</h3>
+          <p class="product-card__description">Мощный смартфон с большим экраном и отличной камерой</p>
+          <p class="product-card__price">4340 ₽</p>
+          <button aria-label="Кнопка добавить в корзину" class="product-card__button btn btn-reset">Добавить в корзину</button>
+        </div>
+      </li>
+
+      <li class="product-card" data-aos="fade-up"  data-name="Сабвуфер Pride S.4 12" data-price="5340"
+        data-image="https://pridecaraudio.com/download/products/big/605.jpg">
+        <img src="https://pridecaraudio.com/download/products/big/605.jpg"
+          alt="Сабвуфер Pride S.4 12" class="product-card__image">
+        <div class="product-card__content">
+          <h3 class="product-card__title">Сабвуфер Pride S.4 12</h3>
+          <p class="product-card__description">Мощный смартфон с большим экраном и отличной камерой</p>
+          <p class="product-card__price">5340 ₽</p>
+          <button aria-label="Кнопка добавить в корзину" class="product-card__button btn btn-reset">Добавить в корзину</button>
+        </div>
+      </li>
+
+      <li class="product-card" data-aos="fade-up"  data-name="Сабвуфер Pride S.4 10" data-price="4990"
+        data-image="https://pridecaraudio.com/download/products/big/604.jpg">
+        <img src="https://pridecaraudio.com/download/products/big/604.jpg"
+          alt="Смартфон Galaxy X" class="product-card__image">
+        <div class="product-card__content">
+          <h3 class="product-card__title">Сабвуфер Pride S.4 10</h3>
+          <p class="product-card__description">Мощный смартфон с большим экраном и отличной камерой</p>
+          <p class="product-card__price">4990 ₽</p>
+          <button aria-label="Кнопка добавить в корзину" class="product-card__button btn btn-reset">Добавить в корзину</button>
+        </div>
+      </li>
+
+      <li class="product-card" data-aos="fade-up"  data-name="Apex A.5" data-price="8990"
+        data-image="https://pridecaraudio.com/download/products/big/641.jpg">
+        <img src="https://pridecaraudio.com/download/products/big/641.jpg"
+          alt="Смартфон Galaxy X" class="product-card__image">
+        <div class="product-card__content">
+          <h3 class="product-card__title"> Apex A.5</h3>
+          <p class="product-card__description">Компактный автомобильный усилитель D-класса для мощного звука.</p>
+          <p class="product-card__price">8990 ₽</p>
+          <button aria-label="Кнопка добавить в корзину" class="product-card__button btn btn-reset">Добавить в корзину</button>
+        </div>
+      </li>
+
+      <li class="product-card" data-aos="fade-up"  data-name="Акустика Pride Solo Mini 6,5" data-price="7990"
+        data-image="https://magnitolkin.ru/wa-data/public/shop/products/77/46/224677/images/412192/412192.970.jpg">
+        <img src="https://magnitolkin.ru/wa-data/public/shop/products/77/46/224677/images/412192/412192.970.jpg"
+          alt="Смартфон Galaxy X" class="product-card__image">
+        <div class="product-card__content">
+          <h3 class="product-card__title"> Акустика Pride Solo Mini 6,5</h3>
+          <p class="product-card__description">Мощный смартфон с большим экраном и отличной камерой</p>
+          <p class="product-card__price">7 990 ₽</p>
+          <button aria-label="Кнопка добавить в корзину" class="product-card__button btn btn-reset">Добавить в корзину</button>
+        </div>
+      </li>
+
+      <li class="product-card" data-aos="fade-up"  data-name="Акустика Pride Solo Mini 6,5" data-price="7990"
+        data-image="https://magnitolkin.ru/wa-data/public/shop/products/77/46/224677/images/412192/412192.970.jpg">
+        <img src="https://magnitolkin.ru/wa-data/public/shop/products/77/46/224677/images/412192/412192.970.jpg"
+          alt="Смартфон Galaxy X" class="product-card__image">
+        <div class="product-card__content">
+          <h3 class="product-card__title"> Акустика Pride Solo Mini 6,5</h3>
+          <p class="product-card__description">Мощный смартфон с большим экраном и отличной камерой</p>
+          <p class="product-card__price">7 990 ₽</p>
+          <button aria-label="Кнопка добавить в корзину" class="product-card__button btn btn-reset">Добавить в корзину</button>
+        </div>
+      </li>
+
+      <li class="product-card" data-aos="fade-up"  data-name="Магнитола Aura AMH-77DSP" data-price="59990"
+        data-image="https://cdn1.ozone.ru/s3/multimedia-l/6374019825.jpg">
+        <img src="https://cdn1.ozone.ru/s3/multimedia-l/6374019825.jpg" alt="Магнитола Aura AMH-77DSP"
+          class="product-card__image">
+        <div class="product-card__content">
+          <h3 class="product-card__title">Магнитола Aura AMH-77DSP</h3>
+          <p class="product-card__description">Легкий и производительный ноутбук для работы и развлечений</p>
+          <p class="product-card__price">5 990 ₽</p>
+          <button class="product-card__button btn btn-reset">Добавить в корзину</button>
+        </div>
+      </li>
+
+      <li class="product-card" data-aos="fade-up"  data-name="Виброизоляция STP Bimast Super (0.75х0.53 м; 4 мм)" data-price="500"
+        data-image="https://mva-group.ru/upload/iblock/42e/8pj1u522jnheysxtt4yd17s9ga573rka/e7107b8a_29a3_11eb_80ea_9457a5673364_a8490ec6_33cf_11eb_80f1_9457a5673364.jpg">
+        <img src="https://mva-group.ru/upload/iblock/42e/8pj1u522jnheysxtt4yd17s9ga573rka/e7107b8a_29a3_11eb_80ea_9457a5673364_a8490ec6_33cf_11eb_80f1_9457a5673364.jpg"
+          alt="Акустика Pride Solo v.3 (в комплекте OVERBOOST)" class="product-card__image">
+        <div class="product-card__content">
+          <h3 class="product-card__title"> Виброизоляция STP Bimast Super (0.75×0.53 м; 4 мм)</h3>
+          <p class="product-card__description">Материал имеет герметичные свойства</p>
+          <p class="product-card__price">500 ₽</p>
+          <button class="product-card__button btn btn-reset">Добавить в корзину</button>
+        </div>
+      </li>
+
+      <li class="product-card" data-aos="fade-up"  data-name="Акустика Pride Solo v.3 (в комплекте OVERBOOST)" data-price="7990"
+        data-image="https://avatars.mds.yandex.net/get-mpic/4011308/2a000001920f45c4990363007f04d4a669c6/orig">
+        <img src="https://avatars.mds.yandex.net/get-mpic/4011308/2a000001920f45c4990363007f04d4a669c6/orig"
+          alt="Акустика Pride Solo v.3 (в комплекте OVERBOOST)" class="product-card__image">
+        <div class="product-card__content">
+          <h3 class="product-card__title"> Акустика Pride Solo v.3 (в комплекте OVERBOOST)</h3>
+          <p class="product-card__description">Беспроводные наушники с шумоподавлением и чистым звуком</p>
+          <p class="product-card__price">7 990 ₽</p>
+          <button class="product-card__button btn btn-reset">Добавить в корзину</button>
+        </div>
+      </li>
+
+      <li class="product-card" data-aos="fade-up"  data-name="Парковосный радар ParkMaster" data-price="12990"
+        data-image="img/product2.png">
+        <img src="img/product2.png"
+          alt="Парковосный радар ParkMaster" class="product-card__image">
+        <div class="product-card__content">
+          <h3 class="product-card__title">Парковосный радар ParkMaster</h3>
+          <p class="product-card__description">Парктроник</p>
+          <p class="product-card__price">12 990 ₽</p>
+          <button class="product-card__button btn btn-reset">Добавить в корзину</button>
+        </div>
+      </li>
+
+      <li class="product-card" data-aos="fade-up"  data-name="Охранная система StarLine S96 v.2" data-price="19990"
+        data-image="img/product4.png">
+        <img src="img/product4.png"
+          alt="Охранная система StarLine S96 v.2" class="product-card__image">
+        <div class="product-card__content">
+          <h3 class="product-card__title">Охранная система StarLine S96 v.2</h3>
+          <p class="product-card__description">Беспроводные наушники с шумоподавлением и чистым звуком</p>
+          <p class="product-card__price">19 990 ₽</p>
+          <button class="product-card__button btn btn-reset">Добавить в корзину</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
 
     <section class="address mb">
   <div class="container">
-    <h2 class="address__title" data-aos="fade-right">
+    <h2 class="address__title title" data-aos="fade-right">
       Наш адрес
     </h2>
     <div class="address__content" data-aos="fade-left">
@@ -931,7 +703,7 @@
         </article>
       </div>
       <div class="address__map" data-aos="fade-right">
-        <a class="address__map-link" href="https://yandex.ru/maps/?um=constructor%3A1723659a716be44ab38a4e5c64da739285f04b3de4dd1a5add1df63f633a7b3d&amp;source=constructorStatic"
+        <a aria-label="изображение карты Яндекс" class="address__map-link" href="https://yandex.ru/maps/?um=constructor%3A1723659a716be44ab38a4e5c64da739285f04b3de4dd1a5add1df63f633a7b3d&amp;source=constructorStatic"
           target="_blank">
           <img
             src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3A1723659a716be44ab38a4e5c64da739285f04b3de4dd1a5add1df63f633a7b3d&amp;width=600&amp;height=450&amp;lang=ru_RU"
@@ -950,8 +722,34 @@
           <img class="footer__logo" width="199" height="68" src="img/logo_white.svg" alt="Логотип компании Spider">
         </a>
         <div class="header__contacts">
-          <a class="header__phone" href="tel:+79184438082"><span>+7 918 443-80-82</span></a>
-          <a class="header__wsp" href="http://wa.me/79094440062" target="_blank"><span>Написать в
+          <a aria-label="Номер телефона для связи" class="header__phone" href="tel:+79184438082"> <svg
+              class="header__icon header__icon-phone" height="200px" width="200px" version="1.1" id="_x32_"
+              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512"
+              xml:space="preserve" fill="" stroke="" stroke-width="43.519999999999996">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <style type="text/css">
+                  .st0 {
+                    fill: #F6A700;
+                  }
+                </style>
+                <g>
+                  <path class="st0"
+                    d="M94.811,21.696c-35.18,22.816-42.091,94.135-28.809,152.262c10.344,45.266,32.336,105.987,69.42,163.165 c34.886,53.79,83.557,102.022,120.669,129.928c47.657,35.832,115.594,58.608,150.774,35.792 c17.789-11.537,44.218-43.058,45.424-48.714c0,0-15.498-23.896-18.899-29.14l-51.972-80.135 c-3.862-5.955-28.082-0.512-40.386,6.457c-16.597,9.404-31.882,34.636-31.882,34.636c-11.38,6.575-20.912,0.024-40.828-9.142 c-24.477-11.262-51.997-46.254-73.9-77.947c-20.005-32.923-40.732-72.322-41.032-99.264c-0.247-21.922-2.341-33.296,8.304-41.006 c0,0,29.272-3.666,44.627-14.984c11.381-8.392,26.228-28.286,22.366-34.242l-51.972-80.134c-3.401-5.244-18.899-29.14-18.899-29.14 C152.159-1.117,112.6,10.159,94.811,21.696z">
+                  </path>
+                </g>
+              </g>
+            </svg><span>+7 918 443-80-82</span></a>
+          <a aria-label="Номер телефона для связи WhatsApp" class="header__wsp" href="http://wa.me/79094440062"
+            target="_blank">
+            <svg class="header__icon header__icon-wsp" viewBox="0 0 20 20" fill="none"
+              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <defs />
+              <path id="Vector"
+                d="M10.01 0C4.5 0 0.02 4.47 0.02 9.98C0.01 11.74 0.48 13.46 1.35 14.97L0 20L5.23 18.76C6.69 19.55 8.33 19.97 10 19.98L10.01 19.98C15.51 19.98 19.99 15.5 20 9.99C20 7.32 18.96 4.81 17.07 2.92C15.19 1.03 12.68 0 10.01 0ZM10.01 2C12.14 2 14.15 2.83 15.66 4.34C17.17 5.85 18 7.85 18 9.99C17.99 14.39 14.41 17.98 10 17.98C8.67 17.97 7.35 17.64 6.19 17L5.51 16.64L4.77 16.81L2.8 17.28L3.28 15.49L3.5 14.69L3.08 13.97C2.39 12.76 2.01 11.38 2.02 9.98C2.02 5.58 5.6 2 10.01 2ZM6.47 5.37C6.3 5.37 6.03 5.43 5.81 5.68C5.58 5.93 4.93 6.53 4.93 7.76C4.93 8.99 5.83 10.18 5.95 10.34C6.07 10.51 7.68 13.11 10.21 14.11C12.32 14.94 12.75 14.78 13.21 14.74C13.67 14.69 14.69 14.13 14.89 13.55C15.1 12.97 15.1 12.46 15.04 12.36C14.98 12.26 14.81 12.2 14.56 12.07C14.31 11.95 13.08 11.34 12.86 11.26C12.63 11.18 12.46 11.14 12.3 11.39C12.13 11.64 11.65 12.2 11.51 12.36C11.36 12.53 11.21 12.55 10.96 12.43C10.71 12.3 9.91 12.04 8.96 11.19C8.21 10.53 7.71 9.71 7.57 9.46C7.42 9.21 7.55 9.07 7.68 8.95C7.79 8.84 7.93 8.66 8.05 8.51C8.17 8.37 8.22 8.26 8.3 8.1C8.39 7.93 8.34 7.78 8.28 7.66C8.22 7.53 7.73 6.3 7.51 5.81C7.32 5.39 7.13 5.38 6.95 5.38C6.8 5.37 6.64 5.37 6.47 5.37Z"
+                fill="#2ECC71" fill-opacity="1.000000" fill-rule="nonzero" />
+            </svg><span>Написать в
               WhatsApp</span></a>
         </div>
       </div>
@@ -961,27 +759,27 @@
           <h2 class="footer__title">SpiderAudio</h2>
           <ul class="footer__sublist">
             <li class="footer__subitem">
-              <a class="footer__link" href="#">
+              <a aria-label="Ссылка" class="footer__link" href="#">
                 О компании
               </a>
             </li>
             <li class="footer__subitem">
-              <a class="footer__link" href="#">
+              <a aria-label="Ссылка" class="footer__link" href="#">
                 Акции и скидки
               </a>
             </li>
             <li class="footer__subitem">
-              <a class="footer__link" href="#">
+              <a aria-label="Ссылка" class="footer__link" href="#">
                 Видеообзоры
               </a>
             </li>
             <li class="footer__subitem">
-              <a class="footer__link" href="#">
+              <a aria-label="Ссылка" class="footer__link" href="#">
                 Статьи
               </a>
             </li>
             <li class="footer__subitem">
-              <a class="footer__link" href="#">
+              <a aria-label="Ссылка" class="footer__link" href="#">
               </a>
             </li>
           </ul>
@@ -990,27 +788,27 @@
           <h2 class="footer__title">Заказ товара</h2>
           <ul class="footer__sublist">
             <li class="footer__subitem">
-              <a class="footer__link" href="#">
+              <a aria-label="Ссылка" class="footer__link" href="#">
                 Оплата
               </a>
             </li>
             <li class="footer__subitem">
-              <a class="footer__link" href="#">
+              <a aria-label="Ссылка" class="footer__link" href="#">
                 Доставка
               </a>
             </li>
             <li class="footer__subitem">
-              <a class="footer__link" href="#">
+              <a aria-label="Ссылка" class="footer__link" href="#">
                 Гарантия
               </a>
             </li>
             <li class="footer__subitem">
-              <a class="footer__link" href="#">
+              <a aria-label="Ссылка" class="footer__link" href="#">
                 Частые вопросы
               </a>
             </li>
             <li class="footer__subitem">
-              <a class="footer__link" href="#">
+              <a aria-label="Ссылка" class="footer__link" href="#">
               </a>
             </li>
           </ul>
@@ -1019,27 +817,27 @@
           <h2 class="footer__title">Каталог товаров</h2>
           <ul class="footer__sublist">
             <li class="footer__subitem">
-              <a class="footer__link" href="#">
+              <a aria-label="Ссылка" class="footer__link" href="#">
                 Автозвук
               </a>
             </li>
             <li class="footer__subitem">
-              <a class="footer__link" href="#">
+              <a aria-label="Ссылка" class="footer__link" href="#">
                 Шумоизоляция
               </a>
             </li>
             <li class="footer__subitem">
-              <a class="footer__link" href="#">
+              <a aria-label="Ссылка" class="footer__link" href="#">
                 Автосигнализации
               </a>
             </li>
             <li class="footer__subitem">
-              <a class="footer__link" href="#">
+              <a aria-label="Ссылка" class="footer__link" href="#">
                 Парковочные радары
               </a>
             </li>
             <li class="footer__subitem">
-              <a class="footer__link" href="#">
+              <a aria-label="Ссылка" class="footer__link" href="#">
                 Видеорегистраторы
               </a>
             </li>
@@ -1049,7 +847,8 @@
           <h2 class="footer__title">SpiderAudio в соц.сетях</h2>
           <ul class="footer__sublist">
             <li class="footer__social">
-              <a class="footer__ref" href="https://www.instagram.com/spider_audio" target="_blank">
+              <a aria-label="ссылка на instagram" class="footer__ref" href="https://www.instagram.com/spider_audio"
+                target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 256 256">
                   <g fill="none">
                     <rect width="256" height="256" fill="url(#skillIconsInstagram0)" rx="60" />
@@ -1075,7 +874,7 @@
                   </g>
                 </svg>
               </a>
-              <a class="footer__ref" href="https://vk.com/spider23" target="_blank">
+              <a aria-label="ссылка на vk" class="footer__ref" href="https://vk.com/spider23" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve"
                   style="enable-background:new 0 0 112.196 112.196" viewBox="0 0 112.196 112.196" id="vk">
                   <circle cx="56.098" cy="56.098" r="56.098" style="fill:#4d76a1"></circle>
@@ -1085,8 +884,28 @@
                 </svg>
 
               </a>
-              <a class="footer__ref" href="https://vk.com/spider23" target="_blank">
-          <svg viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M128,0 C57.307,0 0,57.307 0,128 L0,128 C0,198.693 57.307,256 128,256 L128,256 C198.693,256 256,198.693 256,128 L256,128 C256,57.307 198.693,0 128,0 L128,0 Z" fill="#40B3E0"> </path> <path d="M190.2826,73.6308 L167.4206,188.8978 C167.4206,188.8978 164.2236,196.8918 155.4306,193.0548 L102.6726,152.6068 L83.4886,143.3348 L51.1946,132.4628 C51.1946,132.4628 46.2386,130.7048 45.7586,126.8678 C45.2796,123.0308 51.3546,120.9528 51.3546,120.9528 L179.7306,70.5928 C179.7306,70.5928 190.2826,65.9568 190.2826,73.6308" fill="#FFFFFF"> </path> <path d="M98.6178,187.6035 C98.6178,187.6035 97.0778,187.4595 95.1588,181.3835 C93.2408,175.3085 83.4888,143.3345 83.4888,143.3345 L161.0258,94.0945 C161.0258,94.0945 165.5028,91.3765 165.3428,94.0945 C165.3428,94.0945 166.1418,94.5735 163.7438,96.8115 C161.3458,99.0505 102.8328,151.6475 102.8328,151.6475" fill="#D2E5F1"> </path> <path d="M122.9015,168.1154 L102.0335,187.1414 C102.0335,187.1414 100.4025,188.3794 98.6175,187.6034 L102.6135,152.2624" fill="#B5CFE4"> </path> </g> </g></svg>
+              <a aria-label="ссылка на telegram" class="footer__ref" href="https://vk.com/spider23" target="_blank">
+                <svg viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="#000000">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <g>
+                      <path
+                        d="M128,0 C57.307,0 0,57.307 0,128 L0,128 C0,198.693 57.307,256 128,256 L128,256 C198.693,256 256,198.693 256,128 L256,128 C256,57.307 198.693,0 128,0 L128,0 Z"
+                        fill="#40B3E0"> </path>
+                      <path
+                        d="M190.2826,73.6308 L167.4206,188.8978 C167.4206,188.8978 164.2236,196.8918 155.4306,193.0548 L102.6726,152.6068 L83.4886,143.3348 L51.1946,132.4628 C51.1946,132.4628 46.2386,130.7048 45.7586,126.8678 C45.2796,123.0308 51.3546,120.9528 51.3546,120.9528 L179.7306,70.5928 C179.7306,70.5928 190.2826,65.9568 190.2826,73.6308"
+                        fill="#FFFFFF"> </path>
+                      <path
+                        d="M98.6178,187.6035 C98.6178,187.6035 97.0778,187.4595 95.1588,181.3835 C93.2408,175.3085 83.4888,143.3345 83.4888,143.3345 L161.0258,94.0945 C161.0258,94.0945 165.5028,91.3765 165.3428,94.0945 C165.3428,94.0945 166.1418,94.5735 163.7438,96.8115 C161.3458,99.0505 102.8328,151.6475 102.8328,151.6475"
+                        fill="#D2E5F1"> </path>
+                      <path
+                        d="M122.9015,168.1154 L102.0335,187.1414 C102.0335,187.1414 100.4025,188.3794 98.6175,187.6034 L102.6135,152.2624"
+                        fill="#B5CFE4"> </path>
+                    </g>
+                  </g>
+                </svg>
 
               </a>
 
@@ -1097,7 +916,7 @@
               </h3>
             </li>
             <li class="footer__social">
-              <a class="footer__ref" target="_blank"
+              <a aria-label="ссылка на avito" class="footer__ref" target="_blank"
                 href="https://www.avito.ru/user/fbc6fb9d8bccf32180cea174abf7329a/profile?src=sharing ">
                 <svg width="50" height="50" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="10.595" cy="5.225" r="3.325" fill="#965EEB"></circle>
@@ -1106,7 +925,8 @@
                   <circle cx="24.325" cy="21.005" r="5.375" fill="#FF4053"></circle>
                 </svg>
               </a>
-              <a class="footer__ref" href="https://yandex.ru/maps/-/CHgPbF5k" target="_blank">
+              <a aria-label="ссылка на yandex" class="footer__ref" href="https://yandex.ru/maps/-/CHgPbF5k"
+                target="_blank">
                 <?xml version="1.0" ?><svg data-name="Слой 1" width="50" height="50" id="Слой_1" viewBox="0 0 96 96"
                   xmlns="http://www.w3.org/2000/svg">
                   <defs>
@@ -1143,7 +963,7 @@
                     d="M53.38,28.36C49.9,28.24,40,28.93,40,40.87c0,7.06,3.21,10.15,6.49,11.47L38.85,66.72a.52.52,0,0,0,.45.75l3.79,0a.53.53,0,0,0,.46-.28l7.28-14a15.52,15.52,0,0,0,2.42-.07v14a.51.51,0,0,0,.51.51H56.7a.51.51,0,0,0,.51-.51V28.87a.51.51,0,0,0-.51-.51ZM44.25,41.05c0-10.15,7.2-9.7,9-9.43V49.86C50.18,50.17,44.25,49.65,44.25,41.05Z" />
                 </svg>
               </a>
-              <a class="footer__ref" target="_blank" href="https://go.2gis.com/AoUtG">
+              <a aria-label="ссылка на 2Gis" class="footer__ref" target="_blank" href="https://go.2gis.com/AoUtG">
                 <?xml version="1.0" standalone="no"?>
                 <!DOCTYPE svg
                   PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
@@ -1177,18 +997,34 @@
         </li>
       </ul>
       <div class="footer__copyright">
-        <p class="footer__copy">
-          Сайт не является публичной офертой, определяемой положениями Статьи 437 (2) ГК РФ и носит исключительно
-          информационный характер. Производитель оставляет за собой право изменять характеристики товара, его внешний
-          вид
-          и комплектность без предварительного уведомления продавца.
-        </p>
-        <p class="footer__copy">Я даю свое согласие магазину «SpiderAudio» (ИП Черепов Александр Александрович
-          ИНН:
-          231818181 ОГРНИП: 23000000000000) на обработку моих персональных данных, в соответствии с федеральным
-          законом от 2707.2006 № 152 ФЗ «О персональных данных», на условиях целей, определенных <a
-            href="userAgreement.html">Политикой
-            конфиденциальности</a> </p>
+        <details class="details">
+          <summary class="details__summary">
+            <h3 class="details__title">
+              Правовая информация
+            </h3>
+          </summary>
+          <p class="footer__copy details__paragraph">
+            Сайт не является публичной офертой, определяемой положениями Статьи 437 (2) ГК РФ и носит исключительно
+            информационный характер. Производитель оставляет за собой право изменять характеристики товара, его внешний
+            вид
+            и комплектность без предварительного уведомления продавца.
+          </p>
+        </details>
+        <details class="details">
+          <summary class="details__summary">
+            <h3 class="details__title">
+              Соласие на обработку персональных данных
+            </h3>
+          </summary>
+          <p class="footer__copy details__paragraph">Я даю свое согласие магазину «SpiderAudio» (ИП Черепов Александр
+            Александрович
+            ИНН:
+            231818181 ОГРНИП: 23000000000000) на обработку моих персональных данных, в соответствии с федеральным
+            законом от 2707.2006 № 152 ФЗ «О персональных данных», на условиях целей, определенных <a
+              aria-label="ссылка на статью" href="#">Политикой
+              конфиденциальности</a> </p>
+        </details>
+
       </div>
     </div>
   </div>

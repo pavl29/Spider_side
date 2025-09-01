@@ -2,10 +2,10 @@
   margin-bottom: 100px;
 
   @include tablet {
-    margin-bottom: 75px;
+    margin-bottom: 50px;
   }
 
   @include mobile {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
 }

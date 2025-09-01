@@ -28,12 +28,11 @@
         <h3 class="service__subtitle">
           Запишитесь на установку!
         </h3>
-        <form id="serviceForm" action="#" class="form service__form"   method="POST"
-          enctype="multipart/form-data">
+        <form id="serviceForm" action="#" class="form service__form" method="POST" enctype="multipart/form-data">
           <label class="form__label service__label">
-            <input id="serviceTel" type="tel" name="Телефон" class="input-reset service__input service__tel service-tel form__input"
-              placeholder="Номер телефона">
-          <button id="serviceFormBtn" class="btn-reset btn form__btn">Записаться</button>
+            <input id="serviceTel" autocomplete="off" type="tel" name="Телефон"
+              class="input-reset service__input service__tel service-tel form__input" placeholder="Номер телефона">
+            <button id="serviceFormBtn" class="btn-reset btn form__btn">Записаться</button>
           </label>
           <label class="custom-checkbox service__label-checkbox">
             <input id="serviceCheckbox" required type="checkbox" class="custom-checkbox__field">

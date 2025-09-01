@@ -11,10 +11,17 @@
   line-height: 17px;
   text-align: center;
   color: #000;
-  background-color: rgb(246, 167, 0);
+  background: linear-gradient(90deg, #ffdf4e, #fb5234, #ffdf4e);
+  background-size: 200% 100%;
   transition: background-color 0.3s ease-in-out;
+  animation: shine 8s infinite;
   cursor: pointer;
 
+  @keyframes shine {
+    to {
+      background-position: 200% 0;
+    }
+  }
 
   &-black {
     box-shadow: none;
